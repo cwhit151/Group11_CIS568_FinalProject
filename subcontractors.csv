@@ -1,0 +1,21 @@
+company_name,trade_category,service_areas,contact_email,phone,specialties,rating,years_experience,license_number,bonding_capacity,notes
+Desert Steel Fabricators,steel,"Phoenix,Scottsdale,Tempe",contact@desertsteel.com,602-555-0101,"structural steel,rebar,metal decking",4.8,15,ROC-123456,5000000,Excellent track record on medical facilities
+Valley Concrete Solutions,concrete,"Phoenix,Mesa,Chandler,Gilbert",info@valleyconcrete.com,480-555-0202,"foundations,slabs,tilt-up,decorative",4.6,12,ROC-234567,3000000,Specializes in commercial concrete
+Bright Spark Electric,electrical,"Phoenix,Scottsdale,Glendale",bids@brightspark.com,623-555-0303,"commercial wiring,panels,lighting,fire alarm",4.9,18,ROC-345678,2000000,Licensed for medical facilities
+Premier Plumbing AZ,plumbing,"Phoenix,Tempe,Mesa,Chandler",pm@premierplumbingaz.com,602-555-0404,"medical gas,process piping,fire sprinklers",4.7,14,ROC-456789,2500000,Medical gas certified
+Cool Breeze HVAC,hvac,"Phoenix,Scottsdale,Paradise Valley",sales@coolbreezeaz.com,480-555-0505,"VAV systems,medical HVAC,controls,clean rooms",4.8,16,ROC-567890,3500000,OSHPD approved for healthcare
+Arizona Framing Pros,framing,"Phoenix,Glendale,Peoria",quotes@azframing.com,623-555-0606,"metal framing,wood framing,structural",4.5,10,ROC-678901,1500000,Fast turnaround on commercial projects
+Southwest Drywall Inc,drywall,"Phoenix,Tempe,Mesa,Scottsdale",bids@swdrywall.com,602-555-0707,"drywall,metal studs,acoustical ceilings",4.6,13,ROC-789012,2000000,Large crew capacity
+Arizona Roof Masters,roof,"Phoenix,Scottsdale,Cave Creek",info@azroofmasters.com,480-555-0808,"TPO,modified bitumen,metal roofing",4.9,20,ROC-890123,4000000,Warranty specialists
+Precision Flooring AZ,flooring,"Phoenix,Tempe,Chandler,Gilbert",contact@precisionflooraz.com,480-555-0909,"VCT,LVT,epoxy,polished concrete",4.7,11,ROC-901234,1000000,Medical grade flooring expert
+Desert Site Solutions,sitework,"Phoenix,Mesa,Scottsdale,Glendale",pm@desertsitesolutions.com,602-555-1010,"grading,utilities,paving,landscaping",4.5,15,ROC-012345,3000000,Full site package provider
+Elite Demolition AZ,demolition,"Phoenix,Tempe,Mesa,Scottsdale",safety@elitedemoaz.com,623-555-1111,"selective demo,interior demo,hazmat abatement",4.8,12,ROC-123450,1500000,Safety focused with medical experience
+ProFinish Painting,paint,"Phoenix,Scottsdale,Tempe,Gilbert",bids@profinishpainting.com,480-555-1212,"interior,exterior,epoxy coatings,specialty",4.6,9,ROC-234561,800000,Low VOC specialists
+Copper State Electric,electrical,"Mesa,Gilbert,Chandler,Queen Creek",estimates@copperstateelec.com,480-555-1313,"power distribution,data,medical equipment",4.7,14,ROC-345672,2500000,Data center experience
+Mountain View Concrete,concrete,"Phoenix,Scottsdale,Cave Creek,Carefree",mv@mountainviewconcrete.com,602-555-1414,"architectural,stamped,polished,structural",4.5,8,ROC-456783,1000000,Design-build concrete solutions
+Industrial HVAC Systems,hvac,"Phoenix,Tempe,Mesa,Chandler",industrial@ihacsystems.com,602-555-1515,"industrial,process,critical environments",4.9,22,ROC-567894,5000000,Mission critical HVAC specialist
+Southwest Steel Erectors,steel,"Phoenix,Mesa,Tucson",erection@swsteel.com,520-555-1616,"structural erection,misc metals,stairs",4.8,17,ROC-678905,4000000,Fast track steel erection
+Valley Mechanical,plumbing,"Scottsdale,Paradise Valley,Phoenix",valleymech@email.com,480-555-1717,"plumbing,medical gas,process piping",4.7,16,ROC-789016,3000000,High-end commercial plumbing
+Desert Framing & Drywall,drywall,"Glendale,Peoria,Surprise,Goodyear",desert@framedry.com,623-555-1818,"complete systems,soundproofing,specialty",4.6,11,ROC-890127,1800000,Design-assist capabilities
+Arizona Commercial Roofing,roof,"Phoenix,Tempe,Mesa,Gilbert",acr@azcommroofing.com,480-555-1919,"single-ply,built-up,coatings,maintenance",4.8,18,ROC-901238,3500000,Preventive maintenance programs
+Signature Floors,flooring,"Phoenix,Scottsdale,Paradise Valley",signature@floorsaz.com,602-555-2020,"hardwood,tile,carpet,resilient",4.9,14,ROC-012349,1200000,High-end commercial finishes

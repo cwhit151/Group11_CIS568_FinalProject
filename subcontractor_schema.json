@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Subcontractor Database Schema",
+  "description": "Schema for BidCraft subcontractor recommendation system",
+  "type": "object",
+  "properties": {
+    "subcontractors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "company_name",
+          "trade_category",
+          "service_areas",
+          "contact_email",
+          "phone",
+          "rating",
+          "years_experience",
+          "license_number",
+          "bonding_capacity"
+        ],
+        "properties": {
+          "company_name": {
+            "type": "string",
+            "description": "Legal business name of the subcontractor",
+            "minLength": 1,
+            "maxLength": 200,
+            "example": "Desert Steel Fabricators"
+          },
+          "trade_category": {
+            "type": "string",
+            "description": "Primary trade category (must match one of the standard categories)",
+            "enum": [
+              "concrete",
+              "steel",
+              "electrical",
+              "plumbing",
+              "hvac",
+              "framing",
+              "drywall",
+              "roof",
+              "flooring",
+              "sitework",
+              "demolition",
+              "paint"
+            ],
+            "example": "steel"
+          },
+          "service_areas": {
+            "type": "array",
+            "description": "List of cities/regions where subcontractor provides service",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "example": ["Phoenix", "Scottsdale", "Tempe"]
+          },
+          "contact_email": {
+            "type": "string",
+            "format": "email",
+            "description": "Primary contact email for bids/estimates",
+            "example": "contact@desertsteel.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Primary contact phone number",
+            "pattern": "^[0-9-()+ ]+$",
+            "example": "602-555-0101"
+          },
+          "specialties": {
+            "type": "array",
+            "description": "Specific skills, services, or project types the subcontractor specializes in",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "example": ["structural steel", "rebar", "metal decking"]
+          },
+          "rating": {
+            "type": "number",
+            "description": "Performance rating on a 0-5 scale",
+            "minimum": 0,
+            "maximum": 5,
+            "example": 4.8
+          },
+          "years_experience": {
+            "type": "integer",
+            "description": "Number of years in business or performing this trade",
+            "minimum": 0,
+            "maximum": 150,
+            "example": 15
+          },
+          "license_number": {
+            "type": "string",
+            "description": "State contractor license number or certification ID",
+            "minLength": 1,
+            "maxLength": 50,
+            "example": "ROC-123456"
+          },
+          "bonding_capacity": {
+            "type": "integer",
+            "description": "Maximum bonding capacity in USD",
+            "minimum": 0,
+            "example": 5000000
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional notes, certifications, or distinguishing features",
+            "maxLength": 500,
+            "example": "Excellent track record on medical facilities"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "trade_categories": {
+      "description": "Standard trade categories recognized by the system",
+      "enum": [
+        "concrete",
+        "steel",
+        "electrical",
+        "plumbing",
+        "hvac",
+        "framing",
+        "drywall",
+        "roof",
+        "flooring",
+        "sitework",
+        "demolition",
+        "paint"
+      ]
+    },
+    "confidence_scoring": {
+      "description": "Confidence score calculation breakdown (0-100 scale)",
+      "type": "object",
+      "properties": {
+        "trade_match": {
+          "type": "number",
+          "description": "Points for matching the required trade category (max 40)",
+          "maximum": 40
+        },
+        "location_match": {
+          "type": "number",
+          "description": "Points for serving the project location (max 20)",
+          "maximum": 20
+        },
+        "rating_score": {
+          "type": "number",
+          "description": "Points based on performance rating (max 15)",
+          "maximum": 15
+        },
+        "experience_score": {
+          "type": "number",
+          "description": "Points based on years of experience (max 10)",
+          "maximum": 10
+        },
+        "bonding_capacity": {
+          "type": "number",
+          "description": "Points for adequate bonding capacity (max 10)",
+          "maximum": 10
+        },
+        "specialty_match": {
+          "type": "number",
+          "description": "Points for specialty/project type match (max 5)",
+          "maximum": 5
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "subcontractors": [
+        {
+          "company_name": "Desert Steel Fabricators",
+          "trade_category": "steel",
+          "service_areas": ["Phoenix", "Scottsdale", "Tempe"],
+          "contact_email": "contact@desertsteel.com",
+          "phone": "602-555-0101",
+          "specialties": ["structural steel", "rebar", "metal decking"],
+          "rating": 4.8,
+          "years_experience": 15,
+          "license_number": "ROC-123456",
+          "bonding_capacity": 5000000,
+          "notes": "Excellent track record on medical facilities"
+        }
+      ]
+    }
+  ]
+}
